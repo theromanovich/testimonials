@@ -1,0 +1,117 @@
+.container {
+        width: 1170px;
+        max-width: 100%;
+        margin: 20px auto;
+}
+.testimonials {
+        width: 1170px;
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 0 70px 80px 70px;
+        border-radius: 50px;
+        box-sizing: border-box;
+
+        background-color: #CCDDFF;
+        background-image: url(bg-image.svg);
+
+    &-block__title {
+        width: 270px;
+        max-width: 100%;
+        
+
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        font-size: 20px;
+        color: #4B5D68;
+    }
+    &-block__cards {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+    &-block__card-wrapper {
+       display: flex;
+       gap: 15px;
+    }
+    &-block__card {
+        width: 465px;
+        max-width: 100%;
+        border-radius: 50px;
+        padding: 50px 30px 50px 30px;
+        box-sizing: border-box;
+
+        background: #FFFFFF;
+        border: 1px solid #9C69E2;
+        box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    }
+}
+.card-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+}
+.card-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        &__link {
+            text-decoration: none;
+        }
+}
+
+.card-description__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+.title {
+    padding: 80px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media (max-width: 1024px) and (min-width:768px) {
+    .testimonials {
+        padding: 0 20px 40px 20px;
+    &-block__cards {
+        gap: 50px;
+    } 
+}
+    .title {
+        padding: 60px;
+    }
+}
+@media (max-width: 767px) {
+    .testimonials {
+        padding: 0 10px 40px 10px;
+    &-block__cards {
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+    } 
+    &-block__card {
+        padding: 50px 20px 50px 20px;
+    }
+    &-block__card-wrapper {
+        gap: 10px;
+     }
+}
+    .title {
+        padding: 80px 0px;
+    }
+}
